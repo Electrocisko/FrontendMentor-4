@@ -28,7 +28,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-very-dark-blue);
+    background-color: black;
 }
 
 h2 {
@@ -38,29 +38,29 @@ h2 {
 p {
     font-size: 15px;
     color: var(--color-light-grey);
-    line-height:30px;
+    line-height:25px;
 }
 
 .card-container {
-    width: 360px;
-    height: 340px;
+    width: 350px;
+    height: 380px;
     padding: 25px;
     border-radius: 15px;
-    background-color: var(--color-dark-blue);
+    background-color: var(--color-very-dark-blue);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .card-container img {
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
 }
 
 .icon-container{
     height: 40px;
     width: 40px;
-    background-color: hsl(212, 18%, 21%);
+    background-color: var(--color-dark-blue);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -77,8 +77,19 @@ p {
     border-radius: 10px;
     letter-spacing: 4px;
     text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 20px;
 }
 
+
+
+.submit-card:hover,
+.submit-card:active,
+.submit-card:focus
+{
+    background-color: blue;
+    cursor: pointer;
+}
 .point-buttons-container{
     display: flex;
     justify-content: space-between;
@@ -89,7 +100,7 @@ p {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    background-color: hsl(212, 18%, 21%);
+    background-color: var(--color-dark-blue);
     color: var(--color-medium-grey);
     font-weight: bold;
     font-size: 16px;
