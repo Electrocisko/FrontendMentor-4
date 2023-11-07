@@ -29,6 +29,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: black;
+    color: var(--color-white);
 }
 
 h2 {
@@ -52,10 +53,6 @@ p {
     justify-content: space-between;
 }
 
-.card-container img {
-    height: 20px;
-    width: 20px;
-}
 
 .icon-container{
     height: 40px;
@@ -124,9 +121,14 @@ footer {
 }
 
 
-
 footer a {
     color: hsl(228, 45%, 44%);
 }
 
+.hidden {
+    display: none;
+}
 
+.text-center{
+    text-align: center;
+}
