@@ -8,7 +8,8 @@ const illustrationContainer = document.querySelector('.illustration-container');
 const cardContainer = document.querySelector('.card-container');
 const selected = document.querySelector('.selected');
 
-
+let pointSelected = 0;
+let textSelected = "You don't have selected"
 
 
 function handlerSubmit(e) {
@@ -21,16 +22,19 @@ function handlerSubmit(e) {
     illustrationContainer.classList.remove('hidden');
     cardContainer.classList.add('text-center');
     selected.classList.remove('hidden');
+    selected.innerHTML = textSelected;
  
 }
 
 function handlerPoint(e) {
-    console.log(e.target.value);
+  pointSelected = e.target.value;
+  textSelected = `You selected ${pointSelected} out 5`;
+  submitBtn.addEventListener('click', (e) => handlerSubmit(e));
 }
 
 for (let i = 0; i < pointersBTns.length; i++) {
 pointersBTns[i].addEventListener('click', (e) => handlerPoint(e))
 }
 
-submitBtn.addEventListener('click', (e) => handlerSubmit(e));
+
 
