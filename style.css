@@ -1,0 +1,32 @@
+/* 
+- Family: [Overpass](https://fonts.google.com/specimen/Overpass)
+- Weights: 400, 700
+ */
+
+ :root {
+    --color-orange: hsl(25, 97%, 53%);
+    --color-light-grey: hsl(217, 12%, 63%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-medium-grey: hsl(216, 12%, 54%);
+    --color-dark-blue: hsl(213, 19%, 18%);
+    --color-very-dark-blue: hsl(216, 12%, 8%);
+
+    --mobile: 375px;
+    --desktop: 1440px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+p {
+    font-size: 15px;
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
